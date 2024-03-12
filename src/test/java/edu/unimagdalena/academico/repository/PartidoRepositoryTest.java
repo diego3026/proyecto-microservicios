@@ -1,0 +1,17 @@
+package edu.unimagdalena.academico.repository;
+
+import edu.unimagdalena.academico.AbstractIntregrationDBTest;
+import org.junit.jupiter.api.BeforeEach;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class PartidoRepositoryTest extends AbstractIntregrationDBTest {
+    @Autowired
+    private PartidoRepository partidoRepository;
+
+    @BeforeEach
+    void setUp() {
+        partidoRepository.deleteAll();
+    }
+}
